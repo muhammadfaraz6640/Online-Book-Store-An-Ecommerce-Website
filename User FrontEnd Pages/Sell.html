@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>Sell - Real Estate Management System</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"/>
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<!--===============================================================================================-->
+<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7cRoboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+
+	
+    <link rel="stylesheet" href="css/style.css"/>    
+</head>
+<body>
+    
+    <header class="header-section">
+		<a href="index.html" class="site-logo">
+			<img src="img/logo.jpg" alt="" width="150" height="80">
+		</a>
+		<nav class="header-nav">
+			<ul class="main-menu">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="about-us.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Sell.html">Sell</a></li>											
+				<li><a href="buy.html">Buy</a></li>		
+			</ul>
+			<div class="header-right">
+				<div class="user-panel">					
+					<a href="Login.html" class="register">Sign in</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+       	
+	<div class="limiter">        
+		<div class="container-login100" style="background: linear-gradient(90deg, rgba(0,36,24,1) 0%, rgba(7,199,226,1) 28%, rgba(44,170,185,1) 100%, rgba(44,44,185,1) 100%);">
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30" style="background: #696969;">
+				<div class="login100-form validate-form">
+                    <span class="login100-form-title p-b-55" style="color:white">
+						Sell A House
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
+                        <input class="input100" type="text" placeholder="City" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="fas fa-city"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
+                        <input class="input100" type="text" placeholder="Enter location" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="fa fa-location-arrow"></span>
+						</span>
+                    </div>
+                                                            
+                    <label style="color:white; font-size:larger;font-weight: bold;">Upload A House Picture Picture</label>
+                    <input  type="file" required>                                  
+<br />
+<br />
+                    <label style="color:white; font-size:larger;font-weight: bold;">Upload The House Video</label>
+                    <input  type="file" required>                                  
+<br />
+<br />
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
+                        <input class="input100" type="number" placeholder="Number Of Rooms" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="fa fa-bed"></span>
+						</span>
+                    </div>
+                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
+                        <input class="input100" type="number" placeholder="Demand" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="fa fa-money"></span>
+						</span>
+                    </div>						
+                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
+                        <textarea name="Description" class="input100" placeholder="Enter Description if any" cols="30" rows="20"></textarea>                        
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="fas fa-info"></span>
+						</span>
+                    </div>					
+					<div class="container-login100-form-btn p-t-25">                    
+						<button class="login100-form-btn" style="background: #0099ff;">
+							Sale
+						</button>
+					</div>		
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+    <footer class="footer-section">
+		<div class="container">
+			<div class="row text-white">
+				<div class="col-lg-4">
+					<div class="footer-widger">
+						<div class="about-widget">
+							<div class="aw-text">
+								<img src="img/logo.jpg" alt="">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, amet. Inventore numquam quasi ex consequuntur deleniti placeat optio exercitationem officia ipsa praesentium a libero nostrum, illo mollitia quas incidunt aperiam?</p>
+								<a href="contact.html" class="site-btn">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>Company</h2>
+						<ul>
+							<li><a href="about-us.html">About us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="Login.html">Login</a></li>							
+							<li><a href="index.html">Home</a></li>							
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>For Buyers</h2>
+						<ul>
+							<li><a href="buy.html">Buy House</a></li>							
+							<li><a href="SignupBuyer.html">Sign Up As Buyer</a></li>							
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-6">
+					<div class="footer-widger">
+						<h2>For Sellers</h2>
+						<ul>
+							<li><a href="Sell.html">Sell House</a></li>							
+							<li><a href="SignupSeller.html">Sign Up As Seller</a></li>														
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+            <div class="copyright">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<a href="index.html">RealEstate.com</a>
+            </div>
+		</div>
+	</footer>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main1.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
