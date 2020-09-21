@@ -1105,7 +1105,7 @@ Contact Page
 	height: 107px;
 	margin-bottom: 26px;
 	border-radius: 50%;
-	background: #000000;
+	background: coral;
 }
 
 .contact-info-box .ci-icon span {
@@ -1121,7 +1121,7 @@ Contact Page
 .contact-form {
 	padding: 61px 33px;
 	margin-top: 50px;
-	background: #f5f8fa;
+	background: coral;
 	text-align: center;
 }
 
