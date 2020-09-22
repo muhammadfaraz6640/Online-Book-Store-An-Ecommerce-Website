@@ -71,50 +71,85 @@
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-16" >                        
-                        <input class="input100" type="text" placeholder="City" required>
+                        <input class="input100" type="text" placeholder="Book Name Ex: The Harry Potter" required>
 						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<span class="fas fa-city"></span>
+						<span class="symbol-input100">							
+							<span class="fas fa-book"></span>
 						</span>
 					</div>
-
-					<div class="wrap-input100 validate-input m-b-16" >                        
-                        <input class="input100" type="text" placeholder="Enter location" required>
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<span class="fa fa-location-arrow"></span>
-						</span>
-                    </div>
+					
                                                             
-                    <label style="color:white; font-size:larger;font-weight: bold;">Upload A House Picture Picture</label>
+                    <label style="color:white; font-size:larger;font-weight: bold;">Upload A Book Picture</label>
                     <input  type="file" required>                                  
 <br />
-<br />
-                    <label style="color:white; font-size:larger;font-weight: bold;">Upload The House Video</label>
-                    <input  type="file" required>                                  
-<br />
-<br />
-					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
-                        <input class="input100" type="number" placeholder="Number Of Rooms" required>
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<span class="fa fa-bed"></span>
-						</span>
-                    </div>
-                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
-                        <input class="input100" type="number" placeholder="Demand" required>
+<br />                   
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" style="background-color: royalblue;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Choose Book Category
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Educational</a>
+					<a class="dropdown-item" href="#">Mystery</a>
+					</div>
+				</div>
+				<br />
+				<br />
+				<br />
+				<div class="wrap-input100 validate-input m-b-16">                        
+					<textarea name="Description" class="input100" placeholder="Enter Description" cols="30" rows="20"></textarea>                        
+					<span class="focus-input100"></span>
+					<span class="symbol-input100">
+						<span class="fas fa-info"></span>
+					</span>
+				</div>
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" style="background-color: royalblue;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Choose Condition of Book
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">New</a>
+					<a class="dropdown-item" href="#">Near Fine (NF)</a>	
+					<a class="dropdown-item" href="#">Near Fine (NF)</a>	
+					<a class="dropdown-item" href="#">Very Good (VG)</a>	
+					<a class="dropdown-item" href="#">Good (G)</a>	
+					<a class="dropdown-item" href="#">Fair (FR)</a>					
+					<a class="dropdown-item" href="#">Poor (P)</a>	
+					</div>
+				</div>
+				<br />
+				<br />
+				<br />
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" style="background-color: royalblue;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Choose Method of Sell
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Payment</a>
+					<a class="dropdown-item" href="#">Charity</a>					
+					</div>
+				</div>
+				<br />
+				<br />
+				<br />												
+				
+                    <div class="wrap-input100 validate-input m-b-16">                        
+						<label style="color:white; font-size:larger;font-weight: bold;">Enter Demand</label>						
+                        <input class="input100" type="number" placeholder="Demand" value="0" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<span class="fa fa-money"></span>
 						</span>
-                    </div>						
-                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">                        
-                        <textarea name="Description" class="input100" placeholder="Enter Description if any" cols="30" rows="20"></textarea>                        
+					</div>			
+					<label style="color:white; font-size:larger;font-weight: bold;">Enter Discount</label>			
+					<div class="wrap-input100 validate-input m-b-16">                        
+                        <input class="input100" type="number" placeholder="Discount in Percentage" value="0" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<span class="fas fa-info"></span>
+							<span class="fa fa-percent"></span>
 						</span>
-                    </div>					
+					</div>		
+					
 					<div class="container-login100-form-btn p-t-25">                    
 						<button class="login100-form-btn" style="background: royalblue;">
 							Sale
