@@ -16,15 +16,19 @@
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="dist/css/custom-bs4.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    
 
 </head>
 <body>
 
-	
 	<header class="header-section">
-		<a href="index.html" class="site-logo">
-			<img src="img/logo.jpg" alt="" width="150" height="80">
+		<a href="index.html" class="site-logo" style="text-decoration: none;">            
+            <h2 style="color: coral;text-decoration: none;">Online <span style="color: cornsilk;">Book </span>Store</h1>
 		</a>
 		<nav class="header-nav">
 			<ul class="main-menu">
@@ -36,121 +40,110 @@
 			</ul>
 			<div class="header-right">
 				<div class="user-panel">					
-					<a href="Login.html" class="register">Sign in</a>
+                    <a href="Login.html" class="register">Sign in</a>
+                    <a href="#" class="btn btn-warning" style="background-color: coral;">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>  MyCart
+                      </a>
 				</div>
 			</div>
 		</nav>
-	</header>
-	<a href="#" class="upbtn"><i class="fas fa-arrow-up"></i></a>
+	</header>    
+	<a href="#" class="upbtn"><i class="fas fa-arrow-up"></i></a>	
 	
 	<section class="hero-section set-bg" data-setbg="img/buy.jpg">		
 	</section>
-	
+	<div class="search pt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <form class="form-inline">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search Your Book"
+				  aria-label="Search"><br /><br />
+				  <button class="btn" style="background-color: royalblue;"><i class="fas fa-search" aria-hidden="true"></i>Search</button>
+                
+              </form>              
+            </div>            
+          </div>          
+      
+        </div>      
+    </div>      
 	<section class="property-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>All Homes</h2>
+                <h2 style="color: coral;">All Added <span style="color:darksalmon;">Books </span></h1>				
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="property-item">
 						<div class="pi-image">
-							<img src="img/room.jpg" alt="">
+							<img src="img/Book3.jpg" height="500">
 							<div class="pi-badge new">For Sale</div>
 						</div>
-						<h3>2,000,000 <span>Rs</span></h3>
-						<h5>4 <span>Bedrooms</span></h5>
+						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
+						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
+						<h5>Condition > <span style="color: coral;">Fine</span></h5>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
+						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
+						<br />
+						<br />
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="property-item">
 						<div class="pi-image">
-							<img src="img/room.jpg" alt="">
+							<img src="img/Book1.jpg" height="500" >
 							<div class="pi-badge new">For Sale</div>
 						</div>
-						<h3>2,000,000 <span>Rs</span></h3>
-						<h5>4 <span>Bedrooms</span></h5>
+						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
+						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
+						<h5>Condition > <span style="color: coral;">Fine</span></h5>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
+						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
+						<br />
+						<br />
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="property-item">
 						<div class="pi-image">
-							<img src="img/room.jpg" alt="">
+							<img src="img/Book2.jpg" height="500">
 							<div class="pi-badge new">For Sale</div>
 						</div>
-						<h3>2,000,000 <span>Rs</span></h3>
-						<h5>4 <span>Bedrooms</span></h5>
+						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
+						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
+						<h5>Condition > <span style="color: coral;">Fine</span></h5>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
+						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
+						<br />
+						<br />
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
 
 
 	<hr />
-<br />
-<br />
-	
-	<footer class="footer-section">
-		<div class="container">
-			<div class="row text-white">
-				<div class="col-lg-4">
-					<div class="footer-widger">
-						<div class="about-widget">
-							<div class="aw-text">
-								<img src="img/logo.jpg" alt="">
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, amet. Inventore numquam quasi ex consequuntur deleniti placeat optio exercitationem officia ipsa praesentium a libero nostrum, illo mollitia quas incidunt aperiam?</p>
-								<a href="contact.html" class="site-btn">Contact Us</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-6">
-					<div class="footer-widger">
-						<h2>Company</h2>
-						<ul>
-							<li><a href="about-us.html">About us</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="Login.html">Login</a></li>							
-							<li><a href="index.html">Home</a></li>							
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-6">
-					<div class="footer-widger">
-						<h2>For Buyers</h2>
-						<ul>
-							<li><a href="buy.html">Buy House</a></li>							
-							<li><a href="SignupBuyer.html">Sign Up As Buyer</a></li>							
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-6">
-					<div class="footer-widger">
-						<h2>For Sellers</h2>
-						<ul>
-							<li><a href="Sell.html">Sell House</a></li>							
-							<li><a href="SignupSeller.html">Sign Up As Seller</a></li>														
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-			<div class="copyright">
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved<a href="index.html">RealEstate.com</a>
-            </div>
-		</div>
-	</footer>
-    <script src="js/extention/choices.js"></script>
+	<br />
+	<br />
+			
+	<footer class="page-footer font-small" style="background-color: black; opacity: 0.9;">	
+		<div class="footer-copyright text-center py-3" style="color: coral;">© 2020 Copyright:
+		  <a href="https://OnlineBookStore.com/"> OnlineBookStore.com</a>
+		</div>	
+	  </footer>  
+	<script src="js/extention/choices.js"></script>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 	</body>
 </html>
