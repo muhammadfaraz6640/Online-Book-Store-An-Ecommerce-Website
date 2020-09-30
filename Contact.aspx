@@ -54,17 +54,17 @@
 			<div class="contact-form">
 				<div class="row">
 					<div class="col-lg-4">
-						<input type="text" placeholder="Your name">
+                        <asp:TextBox ID="TextBox1" runat="server" placeholder="Your name"></asp:TextBox>						
 					</div>
 					<div class="col-lg-4">
-						<input type="text" placeholder="Your e-mail">
+                        <asp:TextBox ID="TextBox2" runat="server" placeholder="Your e-mail" TextMode="Email" required></asp:TextBox>						
 					</div>
 					<div class="col-lg-4">
-						<input type="text" placeholder="Subject">
+                        <asp:TextBox ID="TextBox3" runat="server" placeholder="Subject"></asp:TextBox>						
 					</div>
 					<div class="col-lg-12">
-						<textarea placeholder="Message"></textarea>
-						<button class="site-btn sb-big" style="background: royalblue ;">Send message</button>
+                        <asp:TextBox ID="TextBox4" runat="server" placeholder="Message" TextMode="MultiLine" required></asp:TextBox>
+                        <asp:Button ID="Button1" runat="server" Text="Send message" class="site-btn sb-big" style="background: royalblue ;" OnClick="Button1_Click"/>						
 					</div>
 				</div>
 			</div>

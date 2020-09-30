@@ -36,10 +36,7 @@
           <div class="row">
             <div class="col-md-6 mb-4">
               <div class="form-inline">
-                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search Your Book"
-				  aria-label="Search"><br /><br />
-				  <button class="btn" style="background-color: royalblue;"><i class="fas fa-search" aria-hidden="true"></i>Search</button>
-                
+                  <asp:Label ID="Label1" runat="server" style="color:white; font-weight:bold; padding-left:20%; font-size:20px;"></asp:Label>                
               </div>              
             </div>            
           </div>          

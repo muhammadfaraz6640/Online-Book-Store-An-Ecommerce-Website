@@ -11,7 +11,27 @@ namespace Online_Book_Store
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["role"] == null)
+            {
+                Button1.Visible = true;
+                Button2.Visible = false;
+            }
+            else if (Session["role"].ToString() == "User")
+            {
+                Button1.Visible = false;
+                Button2.Visible = true;                
+            }            
+        }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Login.aspx");
         }
     }
 }

@@ -45,8 +45,8 @@
 						Sell A Book
 					</span>
 
-					<div class="wrap-input100 validate-input m-b-16" >                        
-                        <input class="input100" type="text" placeholder="Book Name Ex: The Harry Potter" required>
+					<div class="wrap-input100 validate-input m-b-16" >        
+                        <asp:TextBox ID="TextBox1" runat="server" class="input100" placeholder="Book Name Ex: The Harry Potter" required></asp:TextBox>                        
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">							
 							<span class="fas fa-book"></span>
@@ -55,19 +55,30 @@
 					
                                                             
                     <label style="color:white; font-size:larger;font-weight: bold;">Upload A Book Picture</label>
-                    <input  type="file" required>                                  
+
+                     <asp:Image ID="Image1" runat="server" style="width: 64px;height: 75px;"/>    
+                    <br />
+                    <br />
+                    <br />
+            <br />   <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <br />
+                    <br />                    
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>        
+                    <asp:Button ID="Button1" class="login100-form-btn" style="background: royalblue;" runat="server" Text="Upload Image" OnClick="Button1_Click1"/>             
+                    <br />
+                    <br />
 <br />
 <br />                   
 				<div class="dropdown">
 					<asp:DropDownList ID="DropDownList3" runat="server" style="background-color: royalblue; color:white" CssClass="btn">
-						<asp:ListItem Enabled="true" style="background-color: white; color:black" Text="Choose Category Of Book" Value="none"></asp:ListItem>
+												
 					</asp:DropDownList>                    														
 				</div>
 				<br />
 				<br />
 				<br />
-				<div class="wrap-input100 validate-input m-b-16">                        
-					<textarea name="Description" class="input100" placeholder="Enter Description" cols="30" rows="20"></textarea>                        
+				<div class="wrap-input100 validate-input m-b-16">   
+                    <asp:TextBox ID="TextBox2" runat="server" class="input100" placeholder="Enter Description" TextMode="MultiLine"></asp:TextBox>					
 					<span class="focus-input100"></span>
 					<span class="symbol-input100">
 						<span class="fas fa-info"></span>
@@ -88,7 +99,7 @@
 				<br />
 				<br />
 				<div class="dropdown">
-				  <asp:DropDownList ID="DropDownList2" runat="server" style="background-color: royalblue; color:white" CssClass="btn">									
+				  <asp:DropDownList ID="DropDownList2" runat="server" style="background-color: royalblue; color:white" CssClass="btn" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" AutoPostBack="True">									
 							<asp:ListItem Enabled="true" style="background-color: white; color:black" Text="Choose Method of Sale" Value="none"></asp:ListItem>
 							<asp:ListItem Text="payment" Value="payment" style="background-color: white;color:black"></asp:ListItem>
 							<asp:ListItem Text="Charity" Value="Charity" style="background-color: white;color:black"></asp:ListItem>						
@@ -97,27 +108,25 @@
 					</div>				
 				<br />														
 				
-                    <div class="wrap-input100 validate-input m-b-16">                        
-						<label style="color:white; font-size:larger;font-weight: bold;">Enter Demand</label>						
-                        <input class="input100" type="number" placeholder="Demand" value="0" required>
+                    <div class="wrap-input100 validate-input m-b-16">   
+                        <asp:Label ID="Label2" runat="server" style="color:white; font-size:larger;font-weight: bold;" Text="Enter Demand"></asp:Label>						
+                        <asp:TextBox ID="TextBox3" runat="server" class="input100" placeholder="Demand" value="0" required Text="0"></asp:TextBox>                        
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<span class="fa fa-money"></span>
+                            <asp:Label ID="Label4" runat="server" class="fa fa-money"></asp:Label>							
 						</span>
-					</div>			
-					<label style="color:white; font-size:larger;font-weight: bold;">Enter Discount</label>			
-					<div class="wrap-input100 validate-input m-b-16">                        
-                        <input class="input100" type="number" placeholder="Discount in Percentage" value="0" required>
+					</div>								
+					<div class="wrap-input100 validate-input m-b-16">
+                        <asp:Label ID="Label3" runat="server" style="color:white; font-size:larger;font-weight: bold;" Text="Enter Discount"></asp:Label>
+                        <asp:TextBox ID="TextBox4" runat="server" class="input100" placeholder="Discount in Percentage" value="0" required Text="0"></asp:TextBox>                        
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<span class="fa fa-percent"></span>
+                            <asp:Label ID="Label5" runat="server" class="fa fa-percent"></asp:Label>							
 						</span>
 					</div>		
 					
-					<div class="container-login100-form-btn p-t-25">                    
-						<button class="login100-form-btn" style="background: royalblue;">
-							Sale
-						</button>
+					<div class="container-login100-form-btn p-t-25">    
+                        <asp:Button ID="Button2" runat="server" Text="Sale" class="login100-form-btn" style="background: royalblue;" OnClick="Button2_Click"/>						
 					</div>		
                     
 				</div>

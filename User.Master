@@ -44,8 +44,11 @@
 				<li><a href="buy.aspx">Buy</a></li>		
 			</ul>
 			<div class="header-right">
-				<div class="user-panel">					
-                    <a href="Login.aspx" class="register">Sign in</a>
+				<div class="user-panel">					                    
+					<asp:Button ID="Button1" runat="server" class="register" Text="Sign in" OnClick="Button1_Click"/>
+                    <asp:Button ID="Button2" class="register" runat="server" Text="Logout" OnClick="Button2_Click"/>										
+					                    
+
                     <a href="#" class="btn btn-warning" style="background-color: coral;">
                         <span class="glyphicon glyphicon-shopping-cart"></span>  MyCart
                       </a>

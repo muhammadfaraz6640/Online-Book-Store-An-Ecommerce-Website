@@ -113,7 +113,7 @@
 						</span>
 					</div>						
 					<div class="container-login100-form-btn p-t-25">            
-						  <asp:Button ID="Button1" runat="server" Text="Register" class="login100-form-btn" style="background: royalblue;"/>																															
+						  <asp:Button ID="Button1" runat="server" Text="Register" class="login100-form-btn" style="background: royalblue;" OnClick="Button1_Click"/>																															
 					</div>		
                     
 				</div>

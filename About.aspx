@@ -4,14 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    	<title>About - Real Estate Management System</title>
+    	<title>About - Online Book Store</title>
 	<meta charset="UTF-8"/>				
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7cRoboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet"/>	
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>	
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	    
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/slicknav.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,8 +31,9 @@
 				<li><a href="buy.aspx">Buy</a></li>		
 			</ul>
 			<div class="header-right">
-				<div class="user-panel">					
-                    <a href="Login.aspx" class="register">Sign in</a>
+				<div class="user-panel">					                    
+					<asp:Button ID="Button1" runat="server" class="register" Text="Sign in" OnClick="Button1_Click"/>
+                    <asp:Button ID="Button2" class="register" runat="server" Text="Logout" OnClick="Button2_Click"/>										
                     <a href="#" class="btn btn-warning" style="background-color: coral;">
                         <span class="glyphicon glyphicon-shopping-cart"></span>  MyCart
                       </a>

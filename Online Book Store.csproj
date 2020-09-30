@@ -140,11 +140,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Register.cs" />
     <Compile Include="Models\ClearTextBox.cs" />
     <Compile Include="Models\Connection.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Email.cs" />
-    <Compile Include="Models\ForgetPass.cs" />
     <Compile Include="Models\ICurd.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="PasswordRec.aspx.cs">
@@ -186,6 +188,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Books\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
