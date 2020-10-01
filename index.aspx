@@ -49,51 +49,25 @@
                 <h2 style="color: coral;">Recently Added <span style="color:darksalmon;">Books </span></h1>				
 			</div>
 			<div class="row">
+				 <asp:Repeater ID="Repeater1" runat="server" >
+                     <ItemTemplate>
 				<div class="col-lg-4">
 					<div class="property-item">
 						<div class="pi-image">
-							<img src="img/Book3.jpg" height="500">
+							<img src='<%#Eval("BookPic")%>' height="300" width="500">							
 							<div class="pi-badge new">For Sale</div>
 						</div>
-						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
-						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
-						<h5>Condition > <span style="color: coral;">Fine</span></h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
-						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
+						<h3><%#Eval("DiscountPercent")%><span style="color: coral;"> $</span></h3>										
+						<h4 style="text-decoration:line-through;color: red;"><%#Eval("BookPrice")%><span> $ </span></h4>
+						<h5>Condition > <span style="color: coral;"><%#Eval("BookCondition")%></span></h5>
+						<p><%#Eval("BookDescription")%></p>					
+						<a href="AddCart.aspx?bid=<%#Eval("Bid") %>" class="btn" style="background-color: royalblue; color: white;">Add To Cart</a>						
 						<br />
 						<br />
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="property-item">
-						<div class="pi-image">
-							<img src="img/Book1.jpg" height="500" >
-							<div class="pi-badge new">For Sale</div>
-						</div>
-						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
-						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
-						<h5>Condition > <span style="color: coral;">Fine</span></h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
-						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
-						<br />
-						<br />
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="property-item">
-						<div class="pi-image">
-							<img src="img/Book2.jpg" height="500">
-							<div class="pi-badge new">For Sale</div>
-						</div>
-						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
-						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
-						<h5>Condition > <span style="color: coral;">Fine</span></h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
-						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
-						<br />
-						<br />
-					</div>
-				</div>
+						   </ItemTemplate>
+                    </asp:Repeater>												
 			</div>
 		</div>
 	</section>
@@ -104,51 +78,25 @@
                 <h2 style="color: coral;">Recently Added <span style="color:darksalmon;"> Charity Books </span></h1>				
 			</div>
 			<div class="row">
+				<asp:Repeater ID="Repeater2" runat="server" >
+                     <ItemTemplate>
 				<div class="col-lg-4">
 					<div class="property-item">
 						<div class="pi-image">
-							<img src="img/Book3.jpg" height="500">
+							<img src='<%#Eval("BookPic")%>' height="300" width="500">							
 							<div class="pi-badge new">For Sale</div>
 						</div>
-						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
-						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
-						<h5>Condition > <span style="color: coral;">Fine</span></h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
-						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
+						<h3><%#Eval("DiscountPercent")%><span style="color: coral;"> $</span></h3>										
+						<h4 style="text-decoration:line-through;color: red;"><%#Eval("BookPrice")%><span> $ </span></h4>
+						<h5>Condition > <span style="color: coral;"><%#Eval("BookCondition")%></span></h5>
+						<p><%#Eval("BookDescription")%></p>					
+						<a href="AddCart.aspx?bid=<%#Eval("Bid") %>" class="btn" style="background-color: royalblue; color: white;">Add To Cart</a>						
 						<br />
 						<br />
 					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="property-item">
-						<div class="pi-image">
-							<img src="img/Book1.jpg" height="500" >
-							<div class="pi-badge new">For Sale</div>
-						</div>
-						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
-						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
-						<h5>Condition > <span style="color: coral;">Fine</span></h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
-						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
-						<br />
-						<br />
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="property-item">
-						<div class="pi-image">
-							<img src="img/Book2.jpg" height="500">
-							<div class="pi-badge new">For Sale</div>
-						</div>
-						<h3>2,000,000 <span style="color: coral;">$</span></h3>						
-						<h4 style="text-decoration:line-through;color: red;">200<span> $ </span></h4>
-						<h5>Condition > <span style="color: coral;">Fine</span></h5>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus modi tempore facere recusandae quo, veritatis ex molestiae alias, dicta beatae enim deserunt saepe quisquam maxime nam magnam itaque vitae eligendi!</p>						
-						<button class="btn" style="background-color: royalblue; color: white;">Add To Cart</button>
-						<br />
-						<br />
-					</div>
-				</div>
+				</div>				
+</ItemTemplate>
+                    </asp:Repeater>												
 			</div>
 		</div>
 	</section>

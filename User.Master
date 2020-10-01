@@ -49,7 +49,7 @@
                     <asp:Button ID="Button2" class="register" runat="server" Text="Logout" OnClick="Button2_Click"/>										
 					                    
 
-                    <a href="#" class="btn btn-warning" style="background-color: coral;">
+                    <a href="Cart.aspx" class="btn btn-warning" style="background-color: coral;">
                         <span class="glyphicon glyphicon-shopping-cart"></span>  MyCart
                       </a>
 				</div>

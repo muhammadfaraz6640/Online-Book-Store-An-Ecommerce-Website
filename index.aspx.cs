@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -21,6 +23,51 @@ namespace Online_Book_Store
             {
                 Label1.Visible = true;
                 Label1.Text = Session["UserInfo"].ToString();
+            }
+            ShowPaymentBooks();
+            ShowCharityBooks();
+        }        
+        SqlCommand cmd1 = new SqlCommand();
+        SqlDataAdapter sdr1 = new SqlDataAdapter();
+        DataSet ds1 = new DataSet();
+        protected void ShowCharityBooks()
+        {
+            try
+            {
+                string Ischarity = "Charity";
+                con.getConnection();
+                cmd1.CommandText = "select TOP 3 * from Books where IsCharity = '" + Ischarity + "' order by Bid desc";
+                cmd1.Connection = con.getConnection();
+                sdr1.SelectCommand = cmd1;
+                sdr1.Fill(ds1, "Books");
+                Repeater2.DataSource = ds1;
+                Repeater2.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+            }
+        }
+        Models.Connection con = new Models.Connection();
+        SqlCommand cmd = new SqlCommand();
+        SqlDataAdapter sdr = new SqlDataAdapter();
+        DataSet ds = new DataSet();
+        protected void ShowPaymentBooks()
+        {
+            try
+            {
+                string Ispayment = "payment";
+                con.getConnection();
+                cmd.CommandText = "select TOP 3 * from Books where IsCharity = '"+ Ispayment +"' order by Bid desc";
+                cmd.Connection = con.getConnection();
+                sdr.SelectCommand = cmd;
+                sdr.Fill(ds, "Books");
+                Repeater1.DataSource = ds;
+                Repeater1.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
             }
         }
     }

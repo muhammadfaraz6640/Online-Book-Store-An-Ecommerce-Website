@@ -64,7 +64,7 @@
 					</div>
 					<div class="col-lg-12">
                         <asp:TextBox ID="TextBox4" runat="server" placeholder="Message" TextMode="MultiLine" required></asp:TextBox>
-                        <asp:Button ID="Button1" runat="server" Text="Send message" class="site-btn sb-big" style="background: royalblue ;" OnClick="Button1_Click"/>						
+                        <asp:Button ID="Button1" runat="server" Text="Send message" class="site-btn sb-big" style="background: royalblue ; color : white;" OnClick="Button1_Click"/>						
 					</div>
 				</div>
 			</div>

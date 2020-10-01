@@ -81,7 +81,7 @@ namespace Online_Book_Store
                 book.Add(book);
                 Models.ClearTextBox ct = new Models.ClearTextBox();
                 ct.ClearTextbox(TextBox1, TextBox2, TextBox3, TextBox4);
-                Image1.ImageUrl = "";
+                Image1.ImageUrl = "";                                                
                 Label1.Text = "";                
                 Models.Email em = new Models.Email();
                 em.email = Session["UserInfo"].ToString();
@@ -102,7 +102,7 @@ namespace Online_Book_Store
             {
                 string filename = Path.GetFileName(FileUpload1.FileName);
                 FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Books/") + Session["UserInfo"].ToString() + filename);
-                Image1.ImageUrl = "~/Books/" + filename;
+                Image1.ImageUrl = "~/Books/" + Session["UserInfo"].ToString() + filename;
                 Label1.Text = "Books/" + Session["UserInfo"].ToString() + filename ;
             }
             else
