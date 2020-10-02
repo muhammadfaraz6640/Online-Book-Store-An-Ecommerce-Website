@@ -19,11 +19,12 @@ namespace Online_Book_Store.Models
         public string BookCondition { get; set; }
         public string BookDescription { get; set; }
         public string SellingMethod { get; set; }
+        public string IsSold = "No";
 
         public void Add(Book s)
         {
             Connection gcon = new Connection();
-            gcon.ExecuteQuery("insert into Books values ('" + s.BookName + "','" + s.Cid + "','" + s.Sellerid + "','" + s.BookPrice + "','" + s.BookPic + "','" + s.BookDiscount + "','" + s.BookCondition + "','" + s.BookDescription + "','" + s.SellingMethod + "')");
+            gcon.ExecuteQuery("insert into Books values ('" + s.BookName + "','" + s.Cid + "','" + s.Sellerid + "','" + s.BookPrice + "','" + s.BookPic + "','" + s.BookDiscount + "','" + s.BookCondition + "','" + s.BookDescription + "','" + s.SellingMethod + "','" + s.IsSold + "')");
         }
 
         public void Delete(Book s)
