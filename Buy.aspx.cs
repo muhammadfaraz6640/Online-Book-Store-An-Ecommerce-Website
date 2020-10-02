@@ -15,6 +15,7 @@ namespace Online_Book_Store
         {
             
         }
+        string IsSold = "No";
         Models.Connection con = new Models.Connection();
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter sdr = new SqlDataAdapter();
@@ -22,9 +23,10 @@ namespace Online_Book_Store
         protected void ShowAllBooks()
         {
             try
-            {                
+            {
+                
                 con.getConnection();
-                cmd.CommandText = "select * from Books order by DiscountPercent desc";
+                cmd.CommandText = "select * from Books where IsSold = '"+ IsSold +"' order by DiscountPercent desc";
                 cmd.Connection = con.getConnection();
                 sdr.SelectCommand = cmd;
                 sdr.Fill(ds, "Books");
@@ -43,7 +45,7 @@ namespace Online_Book_Store
             {
                 string Ischarity = "Charity";
                 con.getConnection();
-                cmd.CommandText = "select * from Books where IsCharity = '" + Ischarity + "' order by DiscountPercent desc";
+                cmd.CommandText = "select * from Books where IsCharity = '" + Ischarity + "' and IsSold = '" + IsSold + "' order by DiscountPercent desc";
                 cmd.Connection = con.getConnection();
                 sdr.SelectCommand = cmd;
                 sdr.Fill(ds, "Books");
@@ -63,7 +65,7 @@ namespace Online_Book_Store
             {
                 string Ispayment = "payment";
                 con.getConnection();
-                cmd.CommandText = "select * from Books where IsCharity = '" + Ispayment + "' order by DiscountPercent desc";
+                cmd.CommandText = "select * from Books where IsCharity = '" + Ispayment + "' and IsSold = '" + IsSold + "' order by DiscountPercent desc";
                 cmd.Connection = con.getConnection();
                 sdr.SelectCommand = cmd;
                 sdr.Fill(ds, "Books");
@@ -83,7 +85,7 @@ namespace Online_Book_Store
         {
             string BookName = TextBox1.Text;
             con.getConnection();
-            cmd.CommandText = "select * from Books where BookName Like '" + BookName + "%'";
+            cmd.CommandText = "select * from Books where BookName Like '" + BookName + "%' and IsSold = '"+ IsSold +"'";
             cmd.Connection = con.getConnection();
             sdr.SelectCommand = cmd;
             sdr.Fill(ds, "Books");

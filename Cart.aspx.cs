@@ -47,8 +47,9 @@ namespace Online_Book_Store
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            double totalAmount = Convert.ToDouble(Session["grandTotal"].ToString());
-            Response.Redirect("https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_xclick&business=clashofc036-facilitator@gmail.com&amount=" + totalAmount + "&return=http://localhost:12905/Thankyou.aspx");
+            Response.Redirect("Checkout.aspx");
+            //double totalAmount = Convert.ToDouble(Session["grandTotal"].ToString());
+            //Response.Redirect("https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_xclick&business=clashofc036-facilitator@gmail.com&amount=" + totalAmount + "&return=http://localhost:12905/Thankyou.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)

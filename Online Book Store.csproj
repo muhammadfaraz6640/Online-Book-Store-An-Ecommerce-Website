@@ -71,6 +71,7 @@
     <Content Include="AddCart.aspx" />
     <Content Include="Buy.aspx" />
     <Content Include="Cart.aspx" />
+    <Content Include="Checkout.aspx" />
     <Content Include="common.min.js" />
     <Content Include="Contact.aspx" />
     <Content Include="css\bootstrap.min.css" />
@@ -104,6 +105,8 @@
     <Content Include="PasswordRec.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Sell.aspx" />
+    <Content Include="ThankYouCOD.aspx" />
+    <Content Include="ThankyouPayment.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +137,13 @@
     </Compile>
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -167,6 +177,7 @@
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\Register.cs" />
     <Compile Include="Models\ClearTextBox.cs" />
     <Compile Include="Models\Connection.cs" />
@@ -195,6 +206,20 @@
     </Compile>
     <Compile Include="Sell.aspx.designer.cs">
       <DependentUpon>Sell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYouCOD.aspx.cs">
+      <DependentUpon>ThankYouCOD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYouCOD.aspx.designer.cs">
+      <DependentUpon>ThankYouCOD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankyouPayment.aspx.cs">
+      <DependentUpon>ThankyouPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankyouPayment.aspx.designer.cs">
+      <DependentUpon>ThankyouPayment.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>

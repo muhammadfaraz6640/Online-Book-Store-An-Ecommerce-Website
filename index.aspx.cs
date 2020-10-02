@@ -35,8 +35,9 @@ namespace Online_Book_Store
             try
             {
                 string Ischarity = "Charity";
+                string Issold = "No";
                 con.getConnection();
-                cmd1.CommandText = "select TOP 3 * from Books where IsCharity = '" + Ischarity + "' order by Bid desc";
+                cmd1.CommandText = "select TOP 3 * from Books where IsCharity = '" + Ischarity + "' and IsSold = '" + Issold + "' order by Bid desc";
                 cmd1.Connection = con.getConnection();
                 sdr1.SelectCommand = cmd1;
                 sdr1.Fill(ds1, "Books");
@@ -57,8 +58,9 @@ namespace Online_Book_Store
             try
             {
                 string Ispayment = "payment";
+                string Issold = "No";
                 con.getConnection();
-                cmd.CommandText = "select TOP 3 * from Books where IsCharity = '"+ Ispayment +"' order by Bid desc";
+                cmd.CommandText = "select TOP 3 * from Books where IsCharity = '"+ Ispayment + "' and IsSold = '" + Issold + "'  order by Bid desc";
                 cmd.Connection = con.getConnection();
                 sdr.SelectCommand = cmd;
                 sdr.Fill(ds, "Books");

@@ -4,22 +4,20 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
 	<a href="#" class="upbtn"><i class="fas fa-arrow-up"></i></a>
-	
-	<!-- <section class="hero-section set-bg" data-setbg="img/buy.jpg">		
-	</section> -->
+		
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+            <img class="d-block w-100" src="img/1.jpg" alt="First slide" height="500">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+            <img class="d-block w-100" src="img/2.jpg" alt="Second slide" height="500">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+            <img class="d-block w-100" src="img/3.jpg" alt="Third slide" height="500">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/4.jpg" alt="4th slide">
+            <img class="d-block w-100" src="img/4.jpg" alt="4th slide" height="500">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
