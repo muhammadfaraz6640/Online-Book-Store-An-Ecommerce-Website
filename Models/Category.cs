@@ -13,7 +13,9 @@ namespace Online_Book_Store.Models
         public string CatName { get; set; }
         public void Add(Category s)
         {
-            throw new NotImplementedException();
+            
+            Connection gcon = new Connection();
+            gcon.ExecuteQuery("insert into Category values ('" + s.CatName + "')");
         }
 
         public void Delete(Category s)
