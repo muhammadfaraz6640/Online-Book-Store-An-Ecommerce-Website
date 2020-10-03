@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Online_Book_Store.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/> 
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+     <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    
+    <div id="main-wrapper">  
+           <div class="nav-header">
+            <div class="brand-logo" style="background-color:coral;">
+                <a href="AdminHome.aspx" style="text-decoration:none;">
+                    <b class="logo-abbr" style="color:white;font-weight: bold;font-size:larger">OBS</b>
+                    <span class="logo-compact"><img src="./images/logo-compact.png"/></span>
+                    <span class="brand-title">
+                        <p style="color:white;font-weight: bold;font-size:larger">Book Store</p>
+                    </span>
+                </a>
+            </div>
+        </div>
+             <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">                        
+                        <span class="toggle-icon" ><i class="fa fa-bars" aria-hidden="true" style="background-color:coral;"></i></span>
+                    </div>
+                    <asp:Label ID="Label1" runat="server" style="color:red;font-weight:bold;"></asp:Label>
+                    
+                     <asp:Button ID="Button1" runat="server" Text="Logout" class="btn" Style="background-color:coral;color:white;" OnClick="Button1_Click"/>                     
+                </div>
+           
+            </div>           
+        </div>
+           <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Admin Panel</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="AdminHome.aspx" style="color:coral;">Home</a></li>        
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-globe-alt menu-icon"></i><span class="nav-text">Review</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="SeeAllUsers.aspx" style="color:coral;">See All Users</a></li>
+                            <li><a href="SeeAllSales.aspx" style="color:coral;">See All Sales</a></li>
+                            <li><a href="SeeAllOrders.aspx" style="color:coral;">See All Order Details</a></li>                                                        
+                            <li><a href="SeeAllContacts.aspx" style="color:coral;">See All Contacts</a></li>
+                            <li><a href="SeeAllBooks.aspx" style="color:coral;">See All Books</a></li>     
+                            <li><a href="SeeAllBookCategories.aspx" style="color:coral;">See All Categories</a></li>     
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-envelope menu-icon"></i> <span class="nav-text">Contact</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="ContactUser.aspx" style="color:coral;">Contact User</a></li>
+                            <li><a href="ContactEmail.aspx" style="color:coral;">Email</a></li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-screen-tablet menu-icon"></i><span class="nav-text">Insert</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="AdminReg.aspx" style="color:coral;">Insert New Admin</a></li>                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                   
+            </asp:ContentPlaceHolder>     
+                
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; <a href="OnlineBookStore.com">OnlineBookStore</a> 2020</p>
+            </div>
+        </div>
+        
+    </div>
+         
+    
+        <script src="common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+    </form>
+    
+</body>
+</html>
