@@ -27,7 +27,22 @@ namespace Online_Book_Store.Models
             gcon.ExecuteQuery("insert into Users values ('" + s.Name + "','" + s.Contact + "','" + s.Gender + "','" + s.Address + "','" + s.PostCode + "','" + s.Email + "','" + s.Pass + "','" + s.City + "')");
             gcon.ExecuteQuery("insert into Login values('" + s.Email + "','" + s.Pass + "','" + s.role + "')");
         }
-
+        public List<string> GetNames()
+        {
+            Models.Connection con = new Connection();
+            List<string> a = new List<string>();
+            string query = "select Name from Users";
+            SqlCommand com = new SqlCommand(query, con.getConnection());
+            SqlDataReader rd = com.ExecuteReader();
+            while (rd.Read())
+            {
+                Name = rd["Name"].ToString();
+                a.Add(Name);
+                Name = "";
+            }
+            rd.Close();
+            return a;
+        }
         public void Update(Register s)
         {
             throw new NotImplementedException();
