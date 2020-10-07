@@ -8,6 +8,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="content-body">
+         <div class="section-title">
+				<h2>Search All Books By BookID </h2>
+			</div>
         <div class="mov">
                     <asp:TextBox ID="TextBox1" runat="server" placeholder="Search by property id"></asp:TextBox>
         <asp:Button ID="Button2" runat="server" Text="Search" class="btn btn-info" />
@@ -15,15 +18,13 @@
                         </div>
                <br />
                <br />
-                <div class="section-title">
-				<h2>Search All Books By BookID </h2>
-			</div>
+                
 <div id="mainContainer" class="container">  
             <div class="shadowBox">  
                 <div class="page-container">  
                     <div class="container">                          
                         <div class="row">  
-                            <div class="col-lg-12 ">  
+                            <div class="col-lg-12">  
                                 <div class="table-responsive">  
                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="Bid" DataSourceID="SqlDataSource1">
                                         <Columns>

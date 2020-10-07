@@ -7,13 +7,13 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="content-body">
+     <div class="content-body" >
          <br />
                 <div class="section-title">
 				<h2>Add Book category</h2>
 			</div>
         <div class="mov">
-                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Add category Ex: Fiction"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="Add category"></asp:TextBox>
         <asp:Button ID="Button2" runat="server" Text="Add" class="btn btn-info" OnClick="Button2_Click"/>
             
                         </div>

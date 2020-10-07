@@ -52,7 +52,7 @@
            
             </div>           
         </div>
-           <div class="nk-sidebar">           
+           <div class="nk-sidebar" >           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label">Admin Panel</li>
@@ -83,7 +83,7 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="ContactUser.aspx" style="color:coral;">Contact User</a></li>
-                            <li><a href="ContactEmail.aspx" style="color:coral;">Email</a></li>                            
+                            <li><a href="Email.aspx" style="color:coral;">Email</a></li>                            
                         </ul>
                     </li>
                     <li>

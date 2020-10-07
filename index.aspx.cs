@@ -29,11 +29,11 @@ namespace Online_Book_Store
         }        
         SqlCommand cmd1 = new SqlCommand();
         SqlDataAdapter sdr1 = new SqlDataAdapter();
-        DataSet ds1 = new DataSet();
+        DataSet ds1 = new DataSet();        
         protected void ShowCharityBooks()
         {
             try
-            {
+            {                
                 string Ischarity = "Charity";
                 string Issold = "No";
                 con.getConnection();
@@ -56,11 +56,11 @@ namespace Online_Book_Store
         protected void ShowPaymentBooks()
         {
             try
-            {
+            {                
                 string Ispayment = "payment";
                 string Issold = "No";
                 con.getConnection();
-                cmd.CommandText = "select TOP 3 * from Books where IsCharity = '"+ Ispayment + "' and IsSold = '" + Issold + "'  order by Bid desc";
+                cmd.CommandText = "select TOP 3 * from Books where IsCharity = '"+ Ispayment + "' and IsSold = '" + Issold + "' order by Bid desc";
                 cmd.Connection = con.getConnection();
                 sdr.SelectCommand = cmd;
                 sdr.Fill(ds, "Books");

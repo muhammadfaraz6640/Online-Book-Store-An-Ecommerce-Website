@@ -8,6 +8,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="content-body">
+         <div class="section-title">
+				<h2>Search All Users By Uid </h2>
+			</div>
         <div class="mov">
                     <asp:TextBox ID="TextBox1" runat="server" placeholder="Search by property id"></asp:TextBox>
         <asp:Button ID="Button2" runat="server" Text="Search" class="btn btn-info" />
@@ -15,9 +18,7 @@
                         </div>
                <br />
                <br />
-                <div class="section-title">
-				<h2>Search All Users By Uid </h2>
-			</div>
+                
 <div id="mainContainer" class="container">  
             <div class="shadowBox">  
                 <div class="page-container">  

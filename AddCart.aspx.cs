@@ -11,6 +11,9 @@ namespace Online_Book_Store
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Models.Cart cart = new Models.Cart();
+            Models.Register user = new Models.Register();
+            Models.Book book = new Models.Book();
             if (Session["role"] == null)
             {
                 Response.Redirect("Login.aspx");
@@ -18,24 +21,26 @@ namespace Online_Book_Store
             }
             else
             {
-                try
+                cart.Bid = Convert.ToInt16(Request.QueryString["bid"].ToString());
+                cart.BuyerID = user.GetIds(Session["UserInfo"].ToString());
+                cart.SellerID = book.GetIds(cart.Bid);
+                if(cart.BuyerID == cart.SellerID)
                 {
-                    Models.Cart cart = new Models.Cart();
-                    Models.Book book = new Models.Book();
-                    Models.Register user = new Models.Register();
-                    cart.Bid = Convert.ToInt16(Request.QueryString["bid"].ToString());
-                    cart.SellerID = book.GetIds(cart.Bid);
-                    cart.BuyerID = user.GetIds(Session["UserInfo"].ToString());
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "Redit", "alert('This is Your Book so you cannot Buy it'); window.location='" + Request.ApplicationPath + "index.aspx';", true);
+                }
+                else
+                {
+                    
+                    
                     cart.BookPrice = book.GetPrice(cart.Bid);
                     cart.BookName = book.GetName(cart.Bid);
                     cart.BookPic = book.GetPic(cart.Bid);
                     cart.Add(cart);
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "Redit", "alert('Successfully Added To cart...'); window.location='" + Request.ApplicationPath + "index.aspx';", true);
                 }
-                catch(Exception ex)
-                {
-                    Response.Write("<script>alert('" + ex.Message + "')</script>");
-                }
+                
+                    
+                    
             }
         }
     }

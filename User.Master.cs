@@ -15,11 +15,13 @@ namespace Online_Book_Store
             {
                 Button1.Visible = true;
                 Button2.Visible = false;
+                LinkButton1.Visible = false;
             }
             else if (Session["role"].ToString() == "User")
             {
                 Button1.Visible = false;
                 Button2.Visible = true;                
+                LinkButton1.Visible = true;
             }            
         }
 
@@ -32,6 +34,13 @@ namespace Online_Book_Store
         {
             Session.Abandon();
             Response.Redirect("Login.aspx");
+        }
+     
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Models.Register user = new Models.Register();
+            user.Uid = user.GetIds(Session["UserInfo"].ToString());
+            Response.Redirect("Profile.aspx?Uid=" + user.Uid);
         }
     }
 }

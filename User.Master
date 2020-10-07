@@ -51,7 +51,8 @@
 
                     <a href="Cart.aspx" class="btn btn-warning" style="background-color: coral;">
                         <span class="glyphicon glyphicon-shopping-cart"></span>  MyCart
-                      </a>
+                      </a>		
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CssClass="btn" style="background-color:coral;"><i class="fas fa-user"></i> Profile</asp:LinkButton>                        
 				</div>
 			</div>
 		</nav>

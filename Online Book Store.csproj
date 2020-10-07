@@ -70,11 +70,13 @@
     <Content Include="About.aspx" />
     <Content Include="AddCart.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="AdminReg.aspx" />
     <Content Include="Buy.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="Checkout.aspx" />
     <Content Include="common.min.js" />
     <Content Include="Contact.aspx" />
+    <Content Include="ContactUser.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\magnific-popup.css" />
@@ -84,11 +86,13 @@
     <Content Include="css\styles.css" />
     <Content Include="css\util.css" />
     <Content Include="DeleteItem.aspx" />
+    <Content Include="Email.aspx" />
     <Content Include="img\1.jpg" />
     <Content Include="img\2.jpg" />
     <Content Include="img\3.jpg" />
     <Content Include="img\4.jpg" />
     <Content Include="img\About.jpg" />
+    <Content Include="img\admin.jpg" />
     <Content Include="img\Book1.jpg" />
     <Content Include="img\Book2.jpg" />
     <Content Include="img\Book3.jpg" />
@@ -4347,6 +4351,7 @@
     <Content Include="plugins\vectormap-js\js\mapsuite-vectormap.js" />
     <Content Include="plugins\waypoints\jquery.waypoints.min.js" />
     <Content Include="plugins\widget\images\handle.png" />
+    <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SeeAllBookCategories.aspx" />
     <Content Include="SeeAllBooks.aspx" />
@@ -4388,6 +4393,13 @@
     <Compile Include="AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminReg.aspx.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReg.aspx.designer.cs">
+      <DependentUpon>AdminReg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Buy.aspx.cs">
       <DependentUpon>Buy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4416,12 +4428,26 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContactUser.aspx.cs">
+      <DependentUpon>ContactUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUser.aspx.designer.cs">
+      <DependentUpon>ContactUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DeleteItem.aspx.cs">
       <DependentUpon>DeleteItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DeleteItem.aspx.designer.cs">
       <DependentUpon>DeleteItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.aspx.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Email.aspx.designer.cs">
+      <DependentUpon>Email.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -4455,6 +4481,13 @@
     </Compile>
     <Compile Include="PasswordRec.aspx.designer.cs">
       <DependentUpon>PasswordRec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
